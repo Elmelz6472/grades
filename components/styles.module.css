@@ -1,0 +1,53 @@
+/* components/styles.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart {
+    fill: #ff69b4;
+}
+
+.rotate {
+    animation: rotateHeart 4s linear infinite;
+}
+
+@keyframes rotateHeart {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.heading {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.popupButton {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
